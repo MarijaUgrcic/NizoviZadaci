@@ -13,17 +13,11 @@ public class RandomPoker {
         while (!(niz3[0].equals("Jocker") && niz3[1].equals("Melon") && niz3[2].equals("Melon")
                 && niz3[3].equals("Heart") && niz3[4].equals("Coin"))) {
 
-            int index = random.nextInt(niz.length);
-            niz3[0] = niz[index];
-            int index1 = random.nextInt(niz.length);
-            niz3[1] = niz[index1];
-            int index2 = random.nextInt(niz.length);
-            niz3[2] = niz[index2];
-            int index3 = random.nextInt(niz.length);
-            niz3[3] = niz[index3];
-            int index4 = random.nextInt(niz.length);
-            niz3[4] = niz[index4];
+            for (int j = 0; j < 5; j++) {
 
+                int index = random.nextInt(niz.length);
+                niz3[j] = niz[index];
+            }
         }
 
         for (int i = 0; i < niz3.length; i++) {
